@@ -1,0 +1,179 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    background-color: hsl(0, 100%, 74%) ;
+    background-image: url("images/bg-intro-mobile.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    width: 100%;
+    min-width: 280px;
+    max-width: 700px;
+}
+@media (min-width:1000px) {
+    .main-container {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 4rem;
+        max-width: 1200px;
+    }   
+}
+.text-section {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.header,.paragraph{
+    color: white;
+}
+.paragraph {
+    font-size: 1rem;
+}
+.try-trial {
+    color: white;
+    background-color: hsl(248, 32%, 49%);
+    font-weight: bold;
+    padding: 15px 0;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    box-shadow: 0 5px 1px 1px hsla(0, 0%, 0%, 0.243);
+    line-height: 1.4rem;
+
+    cursor: pointer;
+    transition: background-color 0.15s;
+}
+.try-trial span{
+    font-weight: 300;
+}
+
+.try-trial:hover{
+    background-color:hsl(248, 44%, 40%) ;
+}
+@media (min-width:1000px) {
+    .text-section {
+        text-align: left;
+    }
+    .header {
+        font-size: 2.3rem;
+    }
+    .paragraph{
+        font-size: 17px;
+    }
+}
+.input-container {
+    background-color: white;
+    padding: 20px 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    grid-gap: 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 5px 2px hsla(0, 0%, 0%, 0.168);
+}
+.input-div{
+    width: 90%;
+    position: relative;
+}
+input {
+    padding: 15px 15px;
+    width: inherit;
+    border-radius: 5px;
+    border: 1px solid hsl(246, 25%, 77%);
+}
+input.active {
+    border: 1.5px solid  hsl(0, 100%, 74%);
+}
+
+input::placeholder{
+    font-weight: bold;
+}
+
+.icon {
+    position: absolute;
+    top: 18px;
+    right: 25px;
+    background-color: hsl(0, 100%, 74%) ;
+    width: 15px;
+    height: 15px;
+    color: white;
+    border-radius: 10px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+label {
+    font-size: 11px;
+    height: 25px;
+    width: 95%;
+    color: hsl(0, 100%, 74%);
+    font-weight: 500;
+    display: none;
+    justify-content: end;
+    align-items: center;
+}
+.claim-trial {
+    color: white;
+    background-color: hsl(154, 59%, 51%);
+    font-weight: 500;
+    font-size: 16px;
+    padding: 20px 0 12px 0;
+    width: 90%;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 3px 1px 1px hsl(154, 58%, 45%);
+
+    cursor: pointer;
+    transition: opacity 0.15s;
+}
+.claim-trial:hover {
+    opacity: 0.8;
+}
+.terms-service {
+    margin: 0 10px;
+    text-align: center;
+    color:  hsl(246, 25%, 77%);
+    font-size: 0.85rem;
+
+}
+.terms-service a{
+    text-decoration: none;
+    color: hsl(0, 100%, 74%);
+    font-weight: bold;
+}
+.terms-service a:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 2px ;    
+}
+
+.attribution {
+    color: white;
+    text-align: center;
+    width: 100%;
+    font-size: 14px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.attribution a {
+    font-weight: bold;
+    text-decoration: none;
+    color: hsl(248, 44%, 40%) ;
+}
+
+.attribution a:hover {
+    text-decoration: underline;
+}
